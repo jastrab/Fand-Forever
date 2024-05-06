@@ -3,14 +3,30 @@ F^2 = Fand-Forever alebo PC Fand Viewer
 
 - prehliadač pc fand súborov
 - podpora farebnej syntaxe
+- knižnica pre spracovanie fand súboru - **000** - zobrazenie / uloženie
+- knižnica pre spracovanie db súboru - **dbf** - zobrazenie / uloženie
+  (vlastné spracovanie so súborom dbf)
+- knižnica pre spracovanie formátu - **csv** - zobrazenie / uloženie
+- konverzia medzi formátmi **000** <==> **dbf** <==> **csv**
 
+- naprogramované ešte v roku 2018 v python 2
+- update 2024 migrácia python 2 na 3
+  
 - obe verzie majú rovnaký základ
 - 1 verzia je naprogromovaná v TKinter
 - 2 verzia je webový formát html
 
+! Momentálne len ukážky programu !
 
+Tento program bol naprogramovaný okolo r.2017, kedy reverzným inžinierstvom sa mi podarilo rozlúsknuť fandovský súborový formát s dátami 000 ako aj súbor RDB. Preto bolo možné vytvoriť jednoduchý program, pre zobrazenie zdrojových kódov fandu a dorobiť vylepšenia, ktoré pôvodnej verzii chýbali.
+Pôvodne bolo zobrazenie naprogramované v tkintery neskôr bolo spravené aj pre web verziu. Tento program bol naprogramovaný ako hobby projekt.
 
-#Ukážky
+_fand db formát 000:_
+- štrukúra je dosť podobná dbf štruktúre
+- fand používa svoje typy formátu
+- súbor neobsahuje hlavičku
+
+# Ukážky
 
 1. GUI - TKinter
 
@@ -57,6 +73,19 @@ F^2 = Fand-Forever alebo PC Fand Viewer
 
 ![snimka2](https://github.com/jastrab/Fand-Forever/assets/6190406/5cbda4e2-450a-42da-9e63-ab718a3ccc6b)
 
+---
 
-Changelog:
+Niečo k pôvodnému programu:
+
+PC FAND
+
+- DOS vývojový program, pre jednoduché programovanie s možnosťou DB
+- od českých autorov
+- svojho času neprekonateľný program v našich končinách - CZ, SK
+- https://www.alis.cz/cs/pc-fand
+
+
+Zdrojové kody PC FAND boli zverejnené v roku 2019 ako open source:
+
+- https://github.com/alisoss/pcfand
 
